@@ -161,20 +161,34 @@ Retorna todas as tabelas tarifárias com paginação.
       "ativa": true,
       "categorias": [
         {
-          "categoria": "COMERCIAL",
-          "faixas": [
-            { "inicio": 0, "fim": 10, "valorUnitario": 5.00 },
-            { "inicio": 11, "fim": 20, "valorUnitario": 8.50 },
-            { "inicio": 21, "fim": null, "valorUnitario": 12.00 }
-          ]
-        },
-        {
-          "categoria": "INDUSTRIAL",
-          "faixas": [
-            { "inicio": 0, "fim": 15, "valorUnitario": 7.00 },
-            { "inicio": 16, "fim": null, "valorUnitario": 15.00 }
-          ]
-        }
+      "categoria": "COMERCIAL",
+      "faixas": [
+        { "inicio": 0, "fim": 10, "valorUnitario": 5.00 },
+        { "inicio": 11, "fim": 20, "valorUnitario": 8.50 },
+        { "inicio": 21, "fim": null, "valorUnitario": 12.00 }
+      ]
+    },
+    {
+      "categoria": "INDUSTRIAL",
+      "faixas": [
+        { "inicio": 0, "fim": 15, "valorUnitario": 7.00 },
+        { "inicio": 16, "fim": null, "valorUnitario": 15.00 }
+      ]
+    },
+    {
+      "categoria": "PARTICULAR",
+      "faixas": [
+        { "inicio": 0, "fim": 10, "valorUnitario": 4.00 },
+        { "inicio": 11, "fim": null, "valorUnitario": 9.00 }
+      ]
+    },
+    {
+      "categoria": "PUBLICO",
+      "faixas": [
+        { "inicio": 0, "fim": 20, "valorUnitario": 3.00 },
+        { "inicio": 21, "fim": null, "valorUnitario": 6.00 }
+      ]
+    }
       ]
     }
   ],
