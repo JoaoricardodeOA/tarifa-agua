@@ -268,7 +268,7 @@ Calcula o valor do consumo de água com base na tabela tarifária ativa e na cat
 {
   "categoria": "COMERCIAL",
   "consumoTotal": 25,
-  "valorTotal": 198.50,
+  "valorTotal": 195.00,
   "detalhamento": [
     {
       "faixa": { "inicio": 0, "fim": 10 },
@@ -278,15 +278,15 @@ Calcula o valor do consumo de água com base na tabela tarifária ativa e na cat
     },
     {
       "faixa": { "inicio": 11, "fim": 20 },
-      "m3Cobrados": 9,
+      "m3Cobrados": 10,
       "valorUnitario": 8.50,
-      "subtotal": 76.50
+      "subtotal": 85.00
     },
     {
       "faixa": { "inicio": 21, "fim": null },
-      "m3Cobrados": 6,
+      "m3Cobrados": 5,
       "valorUnitario": 12.00,
-      "subtotal": 72.00
+      "subtotal": 60.00
     }
   ]
 }
