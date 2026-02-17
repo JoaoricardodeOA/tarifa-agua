@@ -1,6 +1,6 @@
 # Tarifa de Agua - API REST
 
-API REST para o gerenciamento de tabelas tarifarias e cálculo de consumo de água, construída com Spring Boot.
+API REST para o gerenciamento de tabelas tarifárias e cálculo de consumo de água, construída com Spring Boot.
 
 ## Tecnologias
 
@@ -43,14 +43,14 @@ CREATE DATABASE tarifa_agua;
 
 3. O schema e criado automaticamente pelo Hibernate (`ddl-auto: update`).
 
-## Instalacao e Execucao
+## Instalação e Execução
 
 ```bash
-# Clonar o repositorio
+# Clonar o repositório
 git clone <url-do-repositorio>
 cd tarifa-agua
 
-# Executar a aplicacao
+# Executar a aplicação
 ./mvnw spring-boot:run
 ```
 
@@ -58,7 +58,7 @@ A API estará disponível em `http://localhost:8080`.
 
 ## Endpoints da API
 
-### 1. Criar Tabela Tarifaria
+### 1. Criar Tabela Tarifária
 
 ```
 POST /api/tabelas-tarifarias
@@ -133,13 +133,13 @@ Cria uma nova tabela tarifaria. Apenas uma tabela pode estar ativa por vez. Toda
 
 ---
 
-### 2. Listar Tabelas Tarifarias (paginado)
+### 2. Listar Tabelas Tarifárias (paginado)
 
 ```
 GET /api/tabelas-tarifarias?page=0&size=10&sort=dataVigencia,desc
 ```
 
-Retorna todas as tabelas tarifárias com paginacao.
+Retorna todas as tabelas tarifárias com paginação.
 
 **Parâmetros de query (opcionais):**
 
@@ -191,13 +191,13 @@ Retorna todas as tabelas tarifárias com paginacao.
 
 ---
 
-### 3. Desativar Tabela Tarifaria
+### 3. Desativar Tabela Tarifária
 
 ```
 DELETE /api/tabelas-tarifarias/{id}
 ```
 
-Desativa uma tabela tarifaria (soft delete). A tabela não é removida do banco, apenas marcada como inativa.
+Desativa uma tabela tarifária (soft delete). A tabela não é removida do banco, apenas marcada como inativa.
 
 **Response — 200 OK:**
 
@@ -231,13 +231,13 @@ Desativa uma tabela tarifaria (soft delete). A tabela não é removida do banco,
 
 ---
 
-### 4. Calcular Consumo de Agua
+### 4. Calcular Consumo de Água
 
 ```
 POST /api/calculos
 ```
 
-Calcula o valor do consumo de água com base na tabela tarifaria ativa e na categoria do consumidor.
+Calcula o valor do consumo de água com base na tabela tarifária ativa e na categoria do consumidor.
 
 **Request:**
 
@@ -288,7 +288,7 @@ Calcula o valor do consumo de água com base na tabela tarifaria ativa e na cate
 }
 ```
 
-**Categorias validas:** `COMERCIAL`, `INDUSTRIAL`, `PARTICULAR`, `PUBLICO`
+**Categorias válidas:** `COMERCIAL`, `INDUSTRIAL`, `PARTICULAR`, `PUBLICO`
 
 ---
 
